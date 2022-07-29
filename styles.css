@@ -21,6 +21,7 @@
 }
 
 .header {
+  padding: 2rem;
   z-index: 2;
   background-color: white;
   box-shadow: 0 10px 10px -4px lightgray;
@@ -191,5 +192,62 @@
 }
 
 .main-content {
+  padding: 3rem 2rem;
   background-color: rgba(222, 228, 237, 1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.main-content .projects {
+  grid-column: span 3;
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr repeat(3, 10fr);
+  gap: 2rem;
+}
+
+.main-content .content-title {
+  grid-column: span 2;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-content .card {
+  background-color: white;
+  width: auto;
+  border-left: 5px solid orange;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px lightgray;
+}
+
+.announcements {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7fr;
+}
+
+.announcement-card {
+  background-color: white;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px lightgray;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7fr;
+}
+
+.trending-card {
+  background-color: white;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px lightgray;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(4, 1fr);
 }
